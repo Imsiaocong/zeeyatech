@@ -1,0 +1,32 @@
+# Label Studio data (database, uploads, exports)
+data-10500/
+
+# Label Studio source (third-party, not modified)
+label-studio/
+
+# Nginx binary and archive
+nginx-1.28.3/
+nginx-1.28.3.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+logs/
