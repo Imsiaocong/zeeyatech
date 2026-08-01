@@ -18,17 +18,17 @@ html {
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: #f7fbff;
+  background: linear-gradient(110deg, #ffffff 0%, #f7fbff 58%, #eef7ff 100%);
   color: #0f172a;
   overflow-x: hidden;
   line-height: 1.6;
 }
 
 .glass {
-  background: rgba(12, 16, 28, 0.55);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .reveal {

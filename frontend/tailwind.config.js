@@ -8,17 +8,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'hsl(222 47% 4%)',
-        foreground: 'hsl(210 40% 96%)',
+        background: 'hsl(210 40% 98%)',
+        foreground: 'hsl(222 47% 11%)',
         card: {
-          DEFAULT: 'hsl(222 47% 4%)',
-          foreground: 'hsl(210 40% 96%)',
+          DEFAULT: 'hsl(0 0% 100%)',
+          foreground: 'hsl(222 47% 11%)',
         },
         muted: {
-          DEFAULT: 'hsl(217 33% 12%)',
-          foreground: 'hsl(215 20% 55%)',
+          DEFAULT: 'hsl(210 40% 96%)',
+          foreground: 'hsl(215 16% 47%)',
         },
-        border: 'hsl(217 33% 17%)',
+        border: 'hsl(214 32% 91%)',
       },
       borderRadius: {
         lg: 'var(--radius)',

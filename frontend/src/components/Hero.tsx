@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="relative z-10 min-h-screen flex items-center px-6 sm:px-10 lg:px-16 pt-24 pb-12">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_42%,rgba(105,190,255,0.12),transparent_30%),linear-gradient(110deg,#ffffff_0%,#f7fbff_58%,#eef7ff_100%)] pointer-events-none" />
-      <div className="relative w-full max-w-[1500px] mx-auto rounded-[2rem] overflow-hidden border border-slate-200/80 bg-white/70 shadow-[0_24px_80px_rgba(63,130,180,0.12)]">
+      <div className="relative w-full max-w-[1500px] mx-auto">
         <div className="absolute right-[20%] top-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full bg-sky-100/70 blur-3xl pointer-events-none" />
         <div className="relative flex flex-col lg:flex-row min-h-[min(720px,calc(100vh-9rem))]">
           <div className="flex-[0.9] flex flex-col justify-center px-8 py-14 sm:px-14 lg:px-20 xl:px-24 relative z-10">
