@@ -6,7 +6,11 @@ label-studio/
 
 # Nginx binary and archive
 nginx-1.28.3/
+!nginx-1.28.3/conf/
 nginx-1.28.3.zip
+
+# Frontend dependencies
+frontend/node_modules/
 
 # Python cache
 __pycache__/
