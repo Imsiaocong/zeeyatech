@@ -15,16 +15,16 @@ interface GlobeProps {
 }
 
 const DEFAULT_MARKERS = [
-  { lat: 37.78, lng: -122.42, label: "San Francisco" },
-  { lat: 51.51, lng: -0.13, label: "London" },
-  { lat: 35.68, lng: 139.69, label: "Tokyo" },
-  { lat: -33.87, lng: 151.21, label: "Sydney" },
-  { lat: 1.35, lng: 103.82, label: "Singapore" },
-  { lat: 55.76, lng: 37.62, label: "Moscow" },
-  { lat: -23.55, lng: -46.63, label: "São Paulo" },
-  { lat: 19.43, lng: -99.13, label: "Mexico City" },
-  { lat: 28.61, lng: 77.21, label: "Delhi" },
-  { lat: 36.19, lng: 44.01, label: "Erbil" },
+  { lat: 37.78, lng: -122.42, label: "现场采集" },
+  { lat: 51.51, lng: -0.13, label: "数据质检" },
+  { lat: 35.68, lng: 139.69, label: "图像标注" },
+  { lat: -33.87, lng: 151.21, label: "视频追踪" },
+  { lat: 1.35, lng: 103.82, label: "多模态数据" },
+  { lat: 55.76, lng: 37.62, label: "3D 点云" },
+  { lat: -23.55, lng: -46.63, label: "语音采集" },
+  { lat: 19.43, lng: -99.13, label: "OCR 标注" },
+  { lat: 28.61, lng: 77.21, label: "文本标注" },
+  { lat: 36.19, lng: 44.01, label: "数据交付" },
 ];
 
 const DEFAULT_CONNECTIONS: { from: [number, number]; to: [number, number] }[] =
