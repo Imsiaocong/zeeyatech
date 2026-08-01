@@ -13,12 +13,12 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center justify-between px-8 transition-all duration-400',
-        scrolled && 'bg-[rgba(6,8,13,0.85)] backdrop-blur-[16px] border-b border-white/10'
+        'fixed top-0 left-0 right-0 z-50 h-[72px] flex items-center justify-between px-6 sm:px-8 transition-all duration-400 text-slate-900',
+        scrolled && 'bg-white/85 backdrop-blur-[16px] border-b border-slate-200/80'
       )}
     >
-      <a href="#" className="text-2xl font-extrabold tracking-tight text-white no-underline">
-        智鸭<span className="text-blue-500">科技</span>
+      <a href="#" className="text-2xl font-extrabold tracking-tight text-slate-950 no-underline">
+        智鸭<span className="text-blue-600">科技</span>
       </a>
       <ul className="hidden md:flex gap-8 list-none">
         {[
@@ -30,8 +30,8 @@ export function Navbar() {
           <li key={href}>
             <a
               href={href}
-              className="text-sm font-medium text-slate-400 no-underline transition-colors duration-300 relative
-                hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500
+              className="text-sm font-medium text-slate-500 no-underline transition-colors duration-300 relative
+                hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-500
                 after:transition-[width] after:duration-300 hover:after:w-full"
             >
               {label}

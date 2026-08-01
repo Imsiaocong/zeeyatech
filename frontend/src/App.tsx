@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { Navbar } from '@/components/Navbar';
-import { ThreeBackground } from '@/components/ThreeBackground';
 import { Hero } from '@/components/Hero';
 import { Stats } from '@/components/Stats';
 import { ToolsSection } from '@/components/ToolsSection';
@@ -31,7 +30,6 @@ export default function App() {
 
   return (
     <>
-      <ThreeBackground />
       <Navbar />
       <Hero />
       <Stats />
