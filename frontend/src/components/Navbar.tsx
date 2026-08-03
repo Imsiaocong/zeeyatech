@@ -24,7 +24,7 @@ export function Navbar() {
         {[
           ['#tools', '数据标注工具'],
           ['#ai', 'AI 赋能'],
-          ['#cases', '合作案例'],
+          ['#cases', '合作单位'],
           ['#cta', '联系我们'],
         ].map(([href, label]) => (
           <li key={href}>
