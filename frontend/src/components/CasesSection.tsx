@@ -2,17 +2,29 @@
 
 import { useEffect, useRef } from 'react';
 
-const partners = [
-  { name: '加州伯克利大学', type: '院校' },
-  { name: '清华大学', type: '院校' },
-  { name: '香港科技大学', type: '院校' },
-  { name: '浙江大学', type: '院校' },
-  { name: '复旦大学', type: '院校' },
-  { name: '北京理工学院', type: '院校' },
-  { name: '中国林业科学研究院', type: '科研院所' },
-  { name: '深圳大学', type: '院校' },
-  { name: '中山大学', type: '院校' },
-  { name: '腾讯', type: '企业' },
+import academyOfForestryLogo from '../../../assets/ACADAMYOFFORESTRY.jpg';
+import beijingPolyLogo from '../../../assets/BEIJINGPOLY.png';
+import fudanLogo from '../../../assets/FUDAN.png';
+import hkustLogo from '../../../assets/HKSTU.png';
+import shenzhenUniversityLogo from '../../../assets/SHENZHENU.png';
+import tencentLogo from '../../../assets/TENCENT.png';
+import tsinghuaLogo from '../../../assets/TSINGHUA.png';
+import ucbLogo from '../../../assets/UCB.png';
+import zhejiangUniversityLogo from '../../../assets/ZJU.png';
+import sunYatSenUniversityLogo from '../../../assets/中山大学.jpg';
+import { LogoCloud } from '@/components/ui/logo-cloud-2';
+
+const partnerLogos = [
+  { src: ucbLogo, alt: '加州伯克利大学' },
+  { src: tsinghuaLogo, alt: '清华大学' },
+  { src: hkustLogo, alt: '香港科技大学' },
+  { src: zhejiangUniversityLogo, alt: '浙江大学' },
+  { src: fudanLogo, alt: '复旦大学' },
+  { src: beijingPolyLogo, alt: '北京理工学院' },
+  { src: academyOfForestryLogo, alt: '中国林业科学研究院' },
+  { src: shenzhenUniversityLogo, alt: '深圳大学' },
+  { src: sunYatSenUniversityLogo, alt: '中山大学' },
+  { src: tencentLogo, alt: '腾讯' },
 ];
 
 function RevealCase({ children }: { children: React.ReactNode }) {
@@ -38,18 +50,9 @@ export function CasesSection() {
         与知名高校、科研院所及科技企业建立长期合作关系。
       </p>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
-        {partners.map((partner) => (
-          <RevealCase key={partner.name}>
-            <div className="glass min-h-36 rounded-lg p-6 flex flex-col justify-between relative overflow-hidden transition-transform duration-350 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 cursor-default">
-              <span className="text-xs font-semibold tracking-wider text-blue-600">
-                {partner.type}
-              </span>
-              <h4 className="text-lg font-bold leading-snug text-slate-900">{partner.name}</h4>
-            </div>
-          </RevealCase>
-        ))}
-      </div>
+      <RevealCase>
+        <LogoCloud logos={partnerLogos} />
+      </RevealCase>
     </section>
   );
 }
