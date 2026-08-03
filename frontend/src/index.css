@@ -22,6 +22,12 @@ body {
   color: #0f172a;
   overflow-x: hidden;
   line-height: 1.6;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+html.dark body {
+  background: #000000;
+  color: #f5f5f5;
 }
 
 .glass {
@@ -29,6 +35,24 @@ body {
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.dark .glass {
+  background: rgba(10, 10, 10, 0.78);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.spline-loader {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-top-color: #ffffff;
+  border-radius: 9999px;
+  animation: splineSpin 0.8s linear infinite;
+}
+
+@keyframes splineSpin {
+  to { transform: rotate(360deg); }
 }
 
 .reveal {
